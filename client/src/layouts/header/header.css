@@ -32,7 +32,7 @@
     border-radius: 0;
 }
 
-.header_searchIcon {
+.header__searchIcon {
     padding: 5px;
     height: 22px !important;
     background-color: #cd9042;
@@ -72,4 +72,41 @@
 .header__nav {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+        grid-template-columns: 10px;
+        height: 100%;
+    }
+
+    .header__option {
+        margin: 0;
+    }
+
+    .header__basketCount {
+        margin: 0px;
+    }
+
+    .header__logo {
+        width: 90px;
+    }
+
+    .hae .header__link {
+        grid-column: 1;
+    }
+
+    .header__search {
+        grid-column: 1/4;
+        grid-row: 2;
+        margin: 0 5px 5px 5px;
+
+    }
+
+    .header__nav {
+        grid-column: 3;
+    }
 }
